@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090914">
+  <title>GOD SITE — Ultimate Gaming Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="GOD SITE home">
+        <span class="brand-mark">G</span><span>GOD<span class="accent">SITE</span><small>ULTIMATE GAMING HUB</small></span>
+      </a>
+      <div class="side-label">MENIU PRINCIPAL</div>
+      <nav class="nav">
+        <button class="nav-item active" data-view="overview"><span>◈</span> Overview</button>
+        <button class="nav-item" data-view="games"><span>▣</span> Game Hub <b>06</b></button>
+        <button class="nav-item" data-view="arcade"><span>✦</span> Arcade</button>
+        <button class="nav-item" data-view="profile"><span>◎</span> Profil gamer</button>
+      </nav>
+      <div class="side-label tools-label">PERSONALIZARE</div>
+      <button class="nav-item" id="themeToggle"><span>◐</span> Schimbă tema</button>
+      <button class="nav-item" id="fxToggle"><span>✧</span> Efecte neon <b class="status-dot"></b></button>
+      <div class="sidebar-bottom">
+        <div class="upgrade-card"><div class="spark">✦</div><strong>Level up your game</strong><p>Personalizează-ți propriul univers gaming.</p><button id="jumpProfile">Configurează profilul <span>↗</span></button></div>
+        <div class="user-mini"><div class="avatar">V</div><div><strong id="miniName">The_Vexor</strong><small>PLAYER • ONLINE</small></div><span class="online-dot"></span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Deschide meniul">☰</button>
+        <div class="breadcrumb">GOD SITE <span>/</span> <strong id="crumb">Overview</strong></div>
+        <div class="top-actions"><div class="live-pill"><i></i> SYSTEM ONLINE</div><button class="icon-button" id="quickTheme" title="Schimbă tema">◐</button><button class="top-avatar" id="topProfile" title="Profil">V</button></div>
+      </header>
+
+      <section class="view active" id="overviewView">
+        <div class="welcome-row"><div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR DIGITAL PLAYGROUND</div><h1>LEVEL UP YOUR <span class="gradient-text">UNIVERSE.</span></h1><p class="subtitle">Tot ce-ți place la gaming, într-un singur loc.</p></div><div class="date-chip"><span>◷</span><div><small>ORA LOCALĂ</small><strong id="clock">--:--:--</strong></div></div></div>
+        <div class="hero-card">
+          <div class="hero-grid"></div><div class="hero-content"><div class="hero-tag"><span class="pulse"></span> WELCOME TO THE NEXT LEVEL</div><h2>Play different.<br><span>Be legendary.</span></h2><p>Intră în hub-ul tău personal. Descoperă jocuri, urmărește-ți progresul și fă-l al tău.</p><div class="hero-buttons"><button class="primary-btn" data-goto="games">Explorează jocurile <span>↗</span></button><button class="ghost-btn" data-goto="arcade">Joacă mini-game <span>▷</span></button></div></div><div class="hero-orb"><div class="orb-ring ring-a"></div><div class="orb-ring ring-b"></div><div class="orb-core">G<span>✦</span></div><div class="orbit-label label-one">GAMING<br>MODE</div><div class="orbit-label label-two">UNLOCK<br>YOUR POTENTIAL</div></div><div class="hero-index">G / 001</div>
+        </div>
+        <div class="section-heading"><div><div class="eyebrow">YOUR SPACE</div><h2>Command Center</h2></div><button class="text-button" data-goto="profile">Personalizează <span>↗</span></button></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon purple">◈</span><span class="stat-caption">GAMING LIBRARY</span></div><div class="stat-value">06 <span>games</span></div><div class="stat-bottom"><span class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span>Explorează hub-ul</span></div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon cyan">⚡</span><span class="stat-caption">PLAYER LEVEL</span></div><div class="stat-value">01 <span>rookie</span></div><div class="progress-track"><i style="width:32%"></i></div><div class="stat-footnote">XP demonstrativ · 320 / 1000</div></article>
+          <article class="stat-card"><div class="stat-top"><span class="stat-icon pink">✧</span><span class="stat-caption">AURA POINTS</span></div><div class="stat-value" id="auraPoints">250 <span>AP</span></div><div class="stat-bottom"><span class="positive">↗ +50</span><span>Joacă pentru puncte</span></div></article>
+        </div>
+        <div class="section-heading compact"><div><div class="eyebrow">HANDPICKED FOR YOU</div><h2>Featured games</h2></div><button class="text-button" data-goto="games">Vezi toate <span>→</span></button></div>
+        <div class="games-grid" id="featuredGames"></div>
+        <div class="bottom-banner"><div class="banner-icon">✦</div><div><strong>Built for gamers. Designed for legends.</strong><p>Acesta este spațiul tău. Fă-l să arate exact cum vrei.</p></div><button class="outline-btn" data-goto="profile">Customize hub <span>↗</span></button></div>
+        <footer>© 2026 GOD SITE <span>MADE FOR THE NEXT LEVEL</span><span>HTML · CSS · JS</span></footer>
+      </section>
+
+      <section class="view" id="gamesView">
+        <div class="page-intro"><div class="eyebrow">DISCOVER YOUR NEXT OBSESSION</div><h1>THE <span class="gradient-text">GAME HUB.</span></h1><p class="subtitle">Alege următoarea aventură. Caută, filtrează și explorează.</p></div>
+        <div class="game-controls"><label class="search-box"><span>⌕</span><input id="gameSearch" type="search" placeholder="Caută jocuri..." autocomplete="off"></label><div class="filter-row" id="filters"><button class="filter active" data-filter="All">Toate</button><button class="filter" data-filter="Shooter">Shooter</button><button class="filter" data-filter="Adventure">Adventure</button><button class="filter" data-filter="Competitive">Competitive</button></div></div>
+        <div class="games-grid all-games" id="allGames"></div><div class="empty-state hidden" id="emptyState">Nu am găsit jocuri. Încearcă alt termen de căutare.</div>
+        <footer>© 2026 GOD SITE <span>FIND YOUR NEXT LEVEL</span><span>GAME HUB</span></footer>
+      </section>
+
+      <section class="view" id="arcadeView">
+        <div class="page-intro"><div class="eyebrow">QUICK PLAY • NO DOWNLOAD</div><h1>THE <span class="gradient-text">ARCADE.</span></h1><p class="subtitle">Un mini-joc simplu, direct în browser. Testează-ți reflexele!</p></div>
+        <div class="arcade-layout"><div class="arcade-card"><div class="arcade-head"><div><div class="eyebrow">REACTION TEST</div><h2>Neon Reflex</h2></div><span class="arcade-badge">MINI GAME 001</span></div><p class="arcade-desc">Apasă START. Așteaptă ca zona să devină verde, apoi apasă cât de repede poți. Nu apăsa prea devreme!</p><div class="reaction-zone" id="reactionZone"><span id="reactionIcon">✦</span><strong id="reactionMessage">READY?</strong><small id="reactionSub">Apasă START ca să începi</small></div><div class="arcade-actions"><button class="primary-btn" id="startReaction">Start game <span>▷</span></button><div class="best-time">BEST TIME <strong id="bestTime">— ms</strong></div></div><div class="arcade-note" id="arcadeNote">Sfat: reacțiile rapide vin cu antrenament. Have fun!</div></div><div class="arcade-side"><div class="side-stat"><span>01</span><div><strong>Quick reflexes</strong><p>Testează-ți timpul de reacție.</p></div></div><div class="side-stat"><span>02</span><div><strong>Personal best</strong><p>Recordul se salvează local.</p></div></div><div class="side-stat"><span>03</span><div><strong>Zero downloads</strong><p>Rulează direct în browser.</p></div></div></div></div>
+        <footer>© 2026 GOD SITE <span>PLAY SMART</span><span>ARCADE</span></footer>
+      </section>
+
+      <section class="view" id="profileView">
+        <div class="page-intro"><div class="eyebrow">MAKE IT YOURS</div><h1>PLAYER <span class="gradient-text">PROFILE.</span></h1><p class="subtitle">Personalizează-ți identitatea în GOD SITE.</p></div>
+        <div class="profile-layout"><div class="profile-preview"><div class="preview-cover"><div class="cover-grid"></div><span class="cover-label">PLAYER CARD / 001</span></div><div class="profile-avatar" id="profileAvatar">V</div><div class="preview-body"><span class="profile-online"><i></i> ONLINE</span><h2 id="previewName">The_Vexor</h2><p id="previewBio">Just here to level up. ⚡</p><div class="preview-tags"><span>GAMER</span><span>LEVEL 01</span><span>NEON EDITION</span></div><div class="preview-stats"><div><strong>06</strong><small>GAMES</small></div><div><strong>250</strong><small>AURA PTS</small></div><div><strong>01</strong><small>LEVEL</small></div></div></div></div>
+          <form class="settings-card" id="profileForm"><div class="settings-heading"><div><div class="eyebrow">PLAYER SETTINGS</div><h2>Profilul tău</h2></div><span class="settings-symbol">⚙</span></div><label class="field-label" for="playerName">Username</label><input class="field-input" id="playerName" maxlength="18" value="The_Vexor" required><label class="field-label" for="playerBio">Bio</label><textarea class="field-input" id="playerBio" maxlength="90" rows="3">Just here to level up. ⚡</textarea><label class="field-label">Accent color</label><div class="color-options"><button type="button" class="color-swatch selected" data-color="violet" aria-label="Violet"></button><button type="button" class="color-swatch cyan" data-color="cyan" aria-label="Cyan"></button><button type="button" class="color-swatch pink" data-color="pink" aria-label="Pink"></button><button type="button" class="color-swatch green" data-color="green" aria-label="Green"></button></div><button class="primary-btn save-btn" type="submit">Salvează profilul <span>✓</span></button><p class="form-note" id="formNote">Setările sunt păstrate în acest browser.</p></form></div>
+        <footer>© 2026 GOD SITE <span>YOUR IDENTITY. YOUR RULES.</span><span>PROFILE</span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
